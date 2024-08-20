@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "deep_dark",
+  "features": "radbuck_currency:rad_bucks",
+  "step": "underground_ores"
+}

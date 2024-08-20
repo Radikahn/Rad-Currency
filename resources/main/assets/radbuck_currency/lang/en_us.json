@@ -1,0 +1,12 @@
+{
+  "gui.radbuck_currency.bank_gui.label_empty": "?",
+  "gui.radbuck_currency.bank_gui.button_empty": "-\u003e",
+  "block.radbuck_currency.rad_bucks": "Rad Buck",
+  "gui.radbuck_currency.bank_gui.label_withdraw_max_64": "Withdraw (6400 cap):",
+  "key.radbuck_currency.close_bank_key": "Close Bank Key",
+  "gui.radbuck_currency.bank_gui.tooltip_insert_money_to_deposit_to_bank": "Insert money to deposit to bank account",
+  "gui.radbuck_currency.bank_gui.label_deposit_rad_bucks": "Deposit Rad Bucks:",
+  "gui.radbuck_currency.bank_gui.label_rad_bank": "Rad Bank Balance:",
+  "gui.radbuck_currency.bank_gui.withdrawAmount": "ex ... 32",
+  "key.radbuck_currency.open_bank_key": "Open Bank Key"
+}
