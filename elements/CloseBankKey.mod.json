@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "MINUS",
+    "keyBindingName": "Close Bank Key",
+    "keyBindingCategoryKey": "misc",
+    "onKeyReleased": {
+      "name": "CloseBank"
+    }
+  }
+}

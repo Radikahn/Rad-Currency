@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "radbuck_currency:blocks/rad_bucks",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "radbuck_currency:rad_bucks"
+        }
+      ]
+    }
+  ]
+}

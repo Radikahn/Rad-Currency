@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "radbuck_currency:block/rad_bucks"
+    }
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "mod_elements": [
+    {
+      "name": "RadBucks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rad_bucks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/radbuck_currency/worldgen/placed_feature/rad_bucks.json",
+          "src/main/resources/data/radbuck_currency/forge/biome_modifier/rad_bucks_biome_modifier.json",
+          "src/main/resources/assets/radbuck_currency/models/item/rad_bucks.json",
+          "src/main/resources/data/radbuck_currency/worldgen/configured_feature/rad_bucks.json",
+          "src/main/java/net/mcreator/radbuckcurrency/block/RadBucksBlock.java",
+          "src/main/resources/assets/radbuck_currency/blockstates/rad_bucks.json",
+          "src/main/resources/data/radbuck_currency/loot_tables/blocks/rad_bucks.json",
+          "src/main/resources/assets/radbuck_currency/models/block/rad_bucks.json"
+        ]
+      }
+    },
+    {
+      "name": "GetMoney",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_money",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/radbuckcurrency/procedures/GetMoneyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Deposit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deposit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radbuckcurrency/procedures/DepositProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BankGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bank_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radbuckcurrency/network/BankGUIButtonMessage.java",
+          "src/main/java/net/mcreator/radbuckcurrency/network/BankGUISlotMessage.java",
+          "src/main/java/net/mcreator/radbuckcurrency/world/inventory/BankGUIMenu.java",
+          "src/main/java/net/mcreator/radbuckcurrency/client/gui/BankGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenBank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_bank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radbuckcurrency/procedures/OpenBankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenBankKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_bank_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radbuckcurrency/network/OpenBankKeyMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "CloseBank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_bank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radbuckcurrency/procedures/CloseBankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CloseBankKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_bank_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radbuckcurrency/network/CloseBankKeyMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Withdrawl",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withdrawl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/radbuckcurrency/procedures/WithdrawlProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "bankAccount",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.radbuck_currency.bank_gui.label_empty": "?",
+      "gui.radbuck_currency.bank_gui.button_empty": "-\u003e",
+      "block.radbuck_currency.rad_bucks": "Rad Buck",
+      "gui.radbuck_currency.bank_gui.label_withdraw_max_64": "Withdraw (6400 cap):",
+      "key.radbuck_currency.close_bank_key": "Close Bank Key",
+      "gui.radbuck_currency.bank_gui.tooltip_insert_money_to_deposit_to_bank": "Insert money to deposit to bank account",
+      "gui.radbuck_currency.bank_gui.label_deposit_rad_bucks": "Deposit Rad Bucks:",
+      "gui.radbuck_currency.bank_gui.label_rad_bank": "Rad Bank Balance:",
+      "gui.radbuck_currency.bank_gui.withdrawAmount": "ex ... 32",
+      "key.radbuck_currency.open_bank_key": "Open Bank Key"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "radbuck_currency",
+    "modName": "RadBuck Currency",
+    "version": "1.0.0",
+    "author": "Radikahn, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.radbuckcurrency"
+  },
+  "mcreatorVersion": 202400232117
+}

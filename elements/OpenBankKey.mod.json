@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "APOSTROPHE",
+    "keyBindingName": "Open Bank Key",
+    "keyBindingCategoryKey": "misc",
+    "onKeyReleased": {
+      "name": "OpenBank"
+    }
+  }
+}

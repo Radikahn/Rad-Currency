@@ -1,0 +1,165 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 316,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -3355393,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Deposit"
+          },
+          "onStackTransfer": {
+            "name": "Deposit"
+          },
+          "x": 227,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_deposit_rad_bucks",
+          "text": {
+            "fixedValue": "Deposit Rad Bucks:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 117,
+          "y": 97
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rad_bank",
+          "text": {
+            "fixedValue": "Rad Bank Balance:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 39
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_insert_money_to_deposit_to_bank",
+          "text": {
+            "fixedValue": "Insert money to deposit to bank account"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 253,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 262,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_getmoney",
+          "text": {
+            "fixedValue": "",
+            "name": "GetMoney"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 247,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_withdraw_max_64",
+          "text": {
+            "fixedValue": "Withdraw (6400 cap):"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 70,
+          "y": 66
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "ex ... 32",
+          "name": "withdrawAmount",
+          "width": 120,
+          "height": 20,
+          "x": 178,
+          "y": 61
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "->",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Withdrawl"
+          },
+          "width": 25,
+          "height": 20,
+          "x": 308,
+          "y": 61
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
